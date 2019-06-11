@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  develop:
+    image: anonymizer:develop
+    container_name: anonymizer-develop
+    build:
+      context: .
+      dockerfile: dev.dockerfile
+    volumes:
+      - .:/app
+      - ./node_modules:/app/node_modules:delegated
+    stdin_open: true
+    tty: true
