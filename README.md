@@ -1,3 +1,50 @@
+# ANONYMAZER
+
+## Install
+
+- Install and run [Docker](https://www.docker.com/) *(this project use **docker-compose**)*.
+
+- Download or clone this git repository in your local machine.
+
+- Open terminal and change directory to root project.
+
+- Execute `docker-compose build` to install **docker images** *(Wait a few seconds for the command to complete)*.
+
+## Run develop environment
+
+- Execute `docker-compose up -d develop` to init **docker container**.
+
+> Use `docker-compose up -d --build develop` in case the docker files have been changed.
+
+## Stop
+
+- Execute `docker-compose stop` to **stop** container.
+
+*or*
+
+- Execute `docker-compose down` to **stop** and **delete** container.
+
+## Install with NPM
+
+- Add your package in `~/package.json` file.
+
+- Execute `docker-compose up -d --build develop` to install packages with NPM.
+
+> If docker container is running execute `docker-compose down` to stop and delete container.
+
+## Execute commands
+
+Execute `docker-compose exec develop bash` to attach the container terminal.
+
+---
+
+### Additional resources
+
+- [Docker get started](https://www.docker.com/get-started)
+
+---
+
+
 [![DOI](https://zenodo.org/badge/86087510.svg)](https://zenodo.org/badge/latestdoi/86087510)
 
 # Summary
